@@ -1,9 +1,62 @@
-.mobile-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  .logo{
-    height: 25vh;
-  }
+.mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .logo {
+        height: 20vh;
+    }
+}
+.web-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    span {
+        color: $black;
+        font-size: 20px;
+        font-family: $robotoRg;
+    }
+}
+.bio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: $black;
+    @include media('>lg') {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .head-shot {
+        width: 70vw;
+        height: 70vw;
+        max-width: 1045px;
+        max-height: 1045px;
+        background-image: url('../../../images/head-shot.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include media('>lg') {
+            width: 30vw;
+            height: 30vw;
+            max-width: 1045px;
+            max-height: 1045px;
+        }
+    }
+    p {
+        color: $white;
+        font-family: $robotoRg;
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 20px;
+        width: 75vw;
+        max-width: 1145px;
+        @include media('>lg') {
+          width: 30vw;
+        }
+    }
 }
