@@ -1,0 +1,9 @@
+.mobile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .logo{
+    height: 25vh;
+  }
+}
